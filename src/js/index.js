@@ -39,7 +39,7 @@ function encriptar() {
       "bg-[#D8DFE8]",
       "text-[#0A3871]",
       "w-[328px]",
-      "h-[67px]",
+      "h-[76px]",
       "rounded",
       "hover:bg-[#BFC8D1]"
     );
