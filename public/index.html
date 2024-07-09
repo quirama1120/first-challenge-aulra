@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/styles.css">
+    <title>Primer trabajo Alura</title>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="text-white py-4 px-8 flex justify-center items-center h-24 md:h-48">
+        <img src="../assets/Logo-1.png" alt="Logo Alura" class="h-12">
+        <h1 class="ml-4 text-2xl font-bold text-[#0A3871]">Encriptador de Mensajes</h1>
+    </header>
+
+    <div class="flex flex-col md:flex-row justify-around items-center h-screen mt-[6vh] md:mt-0">
+        <main class="bg-white shadow-md rounded-lg mx-4 p-8 lg:h-[80vh] h-[80vh] w-[90%] md:w-[45%] flex flex-col">
+            <div class="flex-grow">
+                <textarea name="textarea" onclick="clearTextValue()" id="textArea" class="w-full h-80 py-10 mb-4 text-[#0A3871] text-[32px] font-inter-regular focus:outline-none hover:underline resize-none border-0">Ingresa el texto aquí</textarea>
+            </div>
+            <div class="flex items-end w-full">
+                <img src="../assets/bi_exclamation-circle-fill-1.png" alt="signo de exclamación" class="w-6 mr-2">
+                <p class="text-gray-700">Solo letras minúsculas y sin acento</p>
+            </div>
+            <div class="flex justify-center mt-6">
+                <button onclick="encriptar()" id="encriptar" class="bg-[#0A3871] text-white w-[328px] h-[67px] rounded hover:bg-[#082A56]">Encriptar</button>
+                <button onclick="desencriptar()" class="bg-[#D8DFE8] text-[#0A3871] w-[328px] h-[67px] rounded hover:bg-[#BFC8D1] ml-6">Desencriptar</button>
+            </div>
+        </main>
+
+        <aside id="aside" class="bg-white shadow-md rounded-lg mx-4 p-8 lg:h-[80vh] h-[20vh] md:h-[20vh] w-[90%] md:w-[45%] flex flex-col justify-center mt-6 md:mt-0">
+            <div class="h-full flex flex-col items-center">
+                <img id="img" src="../assets/Muñeco.png" alt="imagen de persona arrodillada mirando a través de una lupa" class="w-84 mt-32 md:hidden">
+                <div class="text-center mt-[1%] h-80">
+                    <h2 id="tituloMensaje" class="text-2xl font-bold text-gray-700">Ningún mensaje fue encontrado</h2>
+                    <hr class="my-2 h-4">
+                    <p id="textoEncriptado" class="text-gray-700">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="text-[#0A3871] py-8 text-center flex justify-center items-center h-36 md:h-24">
+        <p>Desarrollado por Christian Quirama Hernández 2024</p>
+    </footer>
+    <script src="../src/js/index.js"></script>
+</body>
+
+</html>
