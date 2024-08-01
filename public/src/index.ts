@@ -64,7 +64,7 @@ const encrypt = () => {
     if (!textArea) {
         console.error("Element with ID 'textArea not found.");
         
-    } else if ( textArea.value === "Ingresa el texto aquí") {
+    } else if ( textArea.value === "Ingresa el texto aquí" || !textArea.value) {
         textArea.value = 'Ingresa el texto aquí'
     }
     else  {
