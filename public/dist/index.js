@@ -53,7 +53,6 @@ const createCopyButton = () => {
     asideElement ? asideElement.appendChild(newButton) : console.error('Element with ID asideElement not found.');
 };
 const encrypt = () => {
-    debugger;
     let textResult = '';
     if (!textArea) {
         console.error("Element with ID 'textArea not found.");
