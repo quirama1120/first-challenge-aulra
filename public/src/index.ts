@@ -40,6 +40,9 @@ const createCopyButton = () => {
         "w-[328px]",
         "h-[67px]",
         "rounded",
+        "flex",
+        "justify-center",
+        "items-center",
         "hover:bg-[#BFC8D1]"
     );
     newButton.style.marginLeft = "35%";
@@ -85,7 +88,7 @@ let secondTextResult = "";
 if (!encryptedText) {
     console.error("Element with ID textArea not found.");
 } else {
-    secondTextResult = encryptedText.innerText.replace(
+    secondTextResult = encryptedText.innerHTML.replace(
         /ai|enter|imes|ober|ufat/g,
         function (match) {
             return newCoincidence[match];
@@ -95,7 +98,7 @@ if (!encryptedText) {
 
 if (!encryptedText) {
     console.error('El elemento con ID "textoEncriptado" no tiene un valor válido.');
-} else if (encryptedText.innerText !== "Ingresa el texto que deseas encriptar o desencriptar") {
+} else if (encryptedText.innerHTML !== "Ingresa el texto que deseas encriptar o desencriptar") {
     if (!messageTitle) {
         console.error('Element with ID tituloMensaje not found');
     } else {
