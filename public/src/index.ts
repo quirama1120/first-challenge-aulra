@@ -45,7 +45,8 @@ const createCopyButton = () => {
         "items-center",
         "hover:bg-[#BFC8D1]"
     );
-    newButton.style.marginLeft = "35%";
+
+    newButton.style.marginLeft = "4%";
     newButton.addEventListener("click", function () {
         const selection = window.getSelection();
         const range = document.createRange();

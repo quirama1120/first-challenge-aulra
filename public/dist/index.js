@@ -34,7 +34,7 @@ const createCopyButton = () => {
     newButton.id = "copyButton";
     newButton.textContent = "Copiar";
     newButton.classList.add("bg-[#D8DFE8]", "text-[#0A3871]", "w-[328px]", "h-[67px]", "rounded", "flex", "justify-center", "items-center", "hover:bg-[#BFC8D1]");
-    newButton.style.marginLeft = "35%";
+    newButton.style.marginLeft = "4%";
     newButton.addEventListener("click", function () {
         const selection = window.getSelection();
         const range = document.createRange();
